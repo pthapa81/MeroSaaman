@@ -1,13 +1,18 @@
 <?php
 require 'dbconfig.php';
-function checkuser($fuid,$ffname,$femail){
-    $check = mysql_query("select * from Users where Fuid='$fuid'");
+function checkuser($fuid,$ffname,$femail,$friends_list){
+    $check = mysql_query("select * from user where fuId='$fuid'");
     $check = mysql_num_rows($check);
-    if (empty($check)) { // if new user . Insert a new record		
-        $query = "INSERT INTO Users (Fuid,Ffname,Femail) VALUES ('$fuid','$ffname','$femail')";
-        mysql_query($query);	
-    } else {   // If Returned user . update the user record		
-        $query = "UPDATE Users SET Ffname='$ffname', Femail='$femail' where Fuid='$fuid'";
-        mysql_query($query);
+    if (empty($check)) {
+        // Add entries for the new user in the database.
+        $query_user = "INSERT INTO user (fuId,firstName,Femail) VALUES ('$fuid','$ffname','$femail')";
+        mysql_query($query_user);
+        foreach( $friends_list as $value){
+            $query_degOfSep = "INSERT INTO degOfSep (fromUserFUId, toUserFUId, separationDeg) VALUES('$fuid', '$value', '1'),('$value','$fuid', '1')";
+            mysql_query($query_degOfSep); 
+            //$query_degOfSep1 = "INSERT INTO degOfSep stoUserFUId, fromUserFUId, separationDeg) VALUES ('5', '6', '1')";
+        }
+    } else {
+        // The user is already in the database.
     }
 }?>
