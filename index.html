@@ -6,13 +6,12 @@
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="grid">
-			<div class="row title_bar">
+			<div class="row">
 				<div class="col-md-3">
-					<h1 style="font-family: arial,sans-serif; text-align:right">Mero Saman</h1>
+					<h1>Mero Saman</h1>
 				</div>
 				<div class="col-md-6">
 					<div align="center">
@@ -20,17 +19,7 @@
 				</div>
 				<div class="col-md-3" align="center">
 					<div align="center">
-						<button type="button" class="btn btn-primary" id="login">Login</button>
-						<div class="login_hidden">
-							<form>
-								<fieldset>
-									<label for="username">Username</label>
-									<input type="text" name="username" id="usename"><br>
-									<label for="password">Password</label>
-									<input type="password" name="password" id="password"><br>
-									<input type="submit">
-								</fieldset>
-						</div>
+						<button type="button" class="btn btn-primary">Login</button>
 					</div>
 				</div>
 			</div>
@@ -91,11 +80,11 @@
 				<div class="col-md-6">
 					<div align="center">
 						<pre>
-			<h2>Mero Saman</h2>
+			Mero Saman
 
-Mero Saaman is all about you. Mero saaman exists because you exist. It is an 
+We believe in people, places, and possibilities. In pursuing endeavours that excite you, regardless of borders.
 
-sole effort to connect people for a good reason. We explore. We reach.We connect!
+This is for the world explorers, lifestyle architects, convention hackers. Get what you need, keep living your way.
 
 
 And we rock...
@@ -138,7 +127,7 @@ HEHEHOHAHA
 				</div>
 			</div>
 			<div class="row">
-				<div align="center" id="pra">
+				<div align="center">
 					<p><h2>Curious? Stay Posted with your email</h2></p>
 						<form>
 							<input type="text">
@@ -146,21 +135,6 @@ HEHEHOHAHA
 						</form>
 				</div>
 			</div>
-		</div>
-	</div>
-		<script>
-			var cer = function() {
-  				$("p").addClass("bg-green")
-  				console.log("hey")
-  				};
-  			var re = function() {
-  				window.location.replace("http://localhost/#pra");
-  			};
-			$(document).ready(function(){
-				$("#login").click(function(){
-					$(".login_hidden").show()
-				})
-			});
-		</script>		
+			
 	</body>
 </html>
