@@ -15,7 +15,7 @@ use Facebook\Entities\AccessToken;
 use Facebook\HttpClients\FacebookCurlHttpClient;
 use Facebook\HttpClients\FacebookHttpable;
 // init app with app id and secret
-FacebookSession::setDefaultApplication( '453783174785722','2e9a37655514eef29c32405c000e7e47' );
+FacebookSession::setDefaultApplication( '703254633116441','0e803d999808c2ed4991d42a021b5bc7' );
 // login helper with redirect_uri
 $helper = new FacebookRedirectLoginHelper('http://localhost:8888/fbconfig.php' );
 try {
@@ -50,6 +50,7 @@ if ( isset( $session ) ) {
     $taggable = (new FacebookRequest( $session, 'GET', '/me/friends' ))->execute()->getGraphObject()->asArray();
     $friends_list = array(); // array holding ids of friends using the Merosaaman app.
     foreach( $taggable['data'] as $value){
+        echo $value->id;
         array_push($friends_list, $value->id);
     }
 
