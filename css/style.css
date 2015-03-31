@@ -34,3 +34,11 @@
 	right: 120px;
 	top:50px;
 }
+
+.add_new{
+	border-radius: 50%;
+	background-color: green;
+	position:fixed;
+	bottom: 90px;
+	right:90px;
+}
