@@ -2,7 +2,6 @@
 * {
     border: 1px solid red !important;
 }
-*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -10,6 +9,21 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
+*/
+
+body {
+	padding: 0px;
+	margin:0px;
+	border:0px;
+}
+
+.container-fluid{
+	width:100%;
+	padding: 0px;
+	margin:0px;
+	border:0px;
+}
+
 
 #bg-black{
 	background-color: black;
@@ -20,17 +34,36 @@
 	background-color: green;
 }
 
+
 .title_bar{
 	opacity: 0.8;
 	background-color: rgb(255, 255, 255);
 	width: 100%;
 	position: fixed;
+	top:0px;
 	z-index: 2;
 }
 
-.login_hidden{
-	display: none;
-	position:fixed;
-	right: 120px;
-	top:50px;
+p {
+	text-align: center;
+	font-size: 1.33em;
+}
+p.ino {
+	font-family: 'Bitter', serif;
+}
+
+p.bor {
+	border: 0.5px;
+}
+
+pre {
+	border:0px;
+	font-family: serif;
+	font-size: 1.5em;
+	text-align:center;
+}
+
+div {
+	padding:0px;
+	width:100%;
 }

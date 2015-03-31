@@ -50,7 +50,7 @@ if ( isset( $session ) ) {
     $taggable = (new FacebookRequest( $session, 'GET', '/me/friends' ))->execute()->getGraphObject()->asArray();
     $friends_list = array(); // array holding ids of friends using the Merosaaman app.
     foreach( $taggable['data'] as $value){
-        echo $value->id;
+        //echo $value->id;
         array_push($friends_list, $value->id);
     }
 
