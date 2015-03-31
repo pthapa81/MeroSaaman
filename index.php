@@ -164,20 +164,20 @@ This is for the world explorers, lifestyle architects, convention hackers. Get w
       </div>
       <div class="col-md-3">
         <ul class="nav nav-pills nav-stacked">
-          <li><a href="#">Product for Mac</a></li>
-          <li><a href="#">Product for Windows</a></li>
+          <li><a href="#">Recommended Shops</a></li>
+          <li><a href="#">The Team</a></li>
         </ul>
       </div>
       <div class="col-md-3">
         <ul class="nav nav-pills nav-stacked">
-          <li><a href="#">Web analytics</a></li>
+          <li><a href="#">Forum</a></li>
           <li><a href="#">Presentations</a></li>          
         </ul>
       </div>
       <div class="col-md-3">
         <ul class="nav nav-pills nav-stacked">
-          <li><a href="#">Product Help</a></li>
-          <li><a href="#">Developer API</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </div>  
     </div>

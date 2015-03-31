@@ -59,7 +59,7 @@ if ( isset( $session ) ) {
      */
     checkuser($fbid,$fbfullname,$femail,$friends_list); // To update local DB    
     
-    header("Location: index.php");
+    header("Location: /index.php");
 } else {
     $loginUrl = $helper->getLoginUrl( array(
         'scope'=>'user_friends'));
