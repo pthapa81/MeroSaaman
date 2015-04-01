@@ -50,7 +50,7 @@ session_start();
                 <div class="col-md-3" align="center">
                     <div align="right">
                     </br>
-                        <a class="btn btn-block btn-social btn-facebook" href="fbconfig.php">
+                        <a class="btn btn-block btn-social btn-facebook" href="/html/dashboard.html">
                         <i class="fa fa-facebook"></i> Login with Facebook
                         </a>
                     </div>
