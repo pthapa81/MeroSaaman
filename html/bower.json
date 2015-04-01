@@ -1,0 +1,32 @@
+{
+  "name": "merosaman",
+  "version": "0.0.0",
+  "authors": [
+    "Roshan Thapaliya <roshanthapalia@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~0.5.5",
+    "paper-input": "Polymer/paper-input#~0.5.5",
+    "paper-button": "Polymer/paper-button#~0.5.5",
+    "core-toolbar": "Polymer/core-toolbar#~0.5.5",
+    "paper-tabs": "Polymer/paper-tabs#~0.5.5",
+    "core-drawer-panel": "Polymer/core-drawer-panel#~0.5.5",
+    "core-header-panel": "Polymer/core-header-panel#~0.5.5",
+    "core-menu": "Polymer/core-menu#~0.5.5",
+    "core-item": "Polymer/core-item#~0.5.5",
+    "core-icons": "Polymer/core-icons#~0.5.5",
+    "core-scaffold": "Polymer/core-scaffold#~0.5.5",
+    "core-dropdown": "Polymer/core-dropdown#~0.5.5",
+    "paper-item": "Polymer/paper-item#~0.5.5",
+    "paper-dropdown": "Polymer/paper-dropdown#~0.5.5",
+    "core-elements": "Polymer/core-elements#~0.5.5"
+  }
+}

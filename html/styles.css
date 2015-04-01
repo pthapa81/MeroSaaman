@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+  height:100%;
+  width:100%;
+  
+}
+
+[main]
+{
+
+  background-color: white;
+
+}
+
+[drawer]
+{
+  background-color: #C4BBBC;
+  border-right: 1px solid #ccc; 
+}
+
+core-drawer-panel:not([narrow])#navicon
+{
+  display:none;
+
+}
+
+core-toolbar
+{
+  background: #E01429;
+  color:white;
+}
+
+
+
+#padding: {
+  position:fixed;
+  left:300px;
+}
+
+#side
+{
+  background-image: url("http://www.businessinsider.com/image/4f3433986bb3f7b67a00003c/cute-cat.jpg");
+}
+
+#name
+{
+
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.content
+{
+  width:100%;
+  height:100%;
+  
+}
+
+#position{
+  position:fixed;
+  top:500px;
+  left:600px;
+}
+
+#newform
+{
+  position:fixed;
+  top:80%;
+  left:90%;
+  height:50px;
+  width:50px;
+  color: #E01429;
+}
+
+#h
+{
+position:fixed;
+  top:85%;
+  left:90%
+}
+
+
