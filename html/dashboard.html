@@ -3,11 +3,12 @@
 
 <head>
 
-  <title>unquote</title>
+  <title>MeroSaaman</title>
 
   <meta name="viewport" 
   content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
   <script src="bower_components/webcomponentsjs/webcomponents.js">
   </script>
   <link rel="stylesheet" type="text/css" href="styles.css">
@@ -44,19 +45,72 @@
       <div>Mero Saman</div>
     </core-toolbar>
 
-    <core-tooltip label="Create a new form" position="right" id="h"> 
+    <div id="addform">
+
+    
+
+  <div id="newform">
+    <core-tooltip label="Create a new request!" position="top">
+    
+    
+
+
+  <core-tooltip tipAttribute="htmltooltip" position="right">
   
-    <core-icon icon="add-circle" id="newform"></core-icon>
-  </core-tooltip>
+  <paper-fab icon="add"></paper-fab>
+    </core-tooltip>
+  
+  </div>
+</core-tooltip>
 
-    <div class="content">
+  </div>
+
+</div>
+
+    <div id="content">
+
+      <div id="form">
+
+        Request Form
+        <br>
+      
+        <form is="ajax-form" action="test/x.php" method="post">
+          
+      <paper-input-decorator floatingLabel label="Enter your first name*" type="text" name="firstname">
+      <input id="input1" name="firstname" is="core-input" required>
+      </paper-input-decorator>
+
+      <paper-input-decorator floatingLabel label="Enter your last name*" type="text" name="lastname">
+      <input id="input2" name="secondname" is="core-input" required>
+      </paper-input-decorator>
+
+        <paper-input-decorator floatingLabel label="Enter your address*" type="text" name="address">
+        <input id="input3" name="address" is="core-input" required>
+      </paper-input-decorator>
+
+
+        <paper-input-decorator floatingLabel label="Enter your primary phone*" type="text" name="phonenumber">
+        <input id="input4" name="primaryphone" is="core-input" pattern="^[0-9].*" required>
+      </paper-input-decorator>
+
+
+        <br><br>
+        <paper-button raised recenteringTouch type="submit" ><button>Submit</button></paper-button>
+
+        
+        </form>
+
+        
+
+  
+      
+
 
       
-      <div class="p">
-      content area
+
       
     </div>
-    </div>
+  </div>
 
   </core-header-panel>
   
