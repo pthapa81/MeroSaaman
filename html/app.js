@@ -17,7 +17,9 @@ document.addEventListener('polymer-ready', function() {
 
 $(document).ready(function(){
         $("#addform").click(function () {
+            $("#content2").hide();
             $("#content").fadeIn(1 );
+
         });
 
     });
@@ -28,5 +30,12 @@ function validate() {
             decorator.isInvalid = !input.validity.valid;
         }
 
+$(document).ready(function(){
+        $("#request").click(function () {
+            $("#content").hide();
+            $("#content2").fadeIn(1 );
 
+        });
+
+    });
 

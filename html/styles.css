@@ -123,3 +123,7 @@ paper-button {
   } 
 
   
+  #content2
+  {
+    display:none;
+  }
