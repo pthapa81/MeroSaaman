@@ -37,7 +37,32 @@ session_start();
     </ul></div></div>
 
 <?php else: ?>     <!-- Before login --> 
+        <?php 
+            require 'php/User.php';
+            require 'php/Address.php';
 
+
+            $buyer = new User;
+            $buyer->setfirstName("Prashant");
+
+            $carrier = new User;
+            $carrier->setfirstName("Nischal");
+
+            $carrier->address = new Address;
+
+            $carrier->address->line1NumberBuilding = "111 Rhode Island Ave";
+            $carrier->address->city = "Washington";
+
+
+            echo $buyer->getfirstName();
+            echo "<br/>";
+            echo $carrier->getfirstName();
+            echo "<br/>";
+            $carrier->address->printValues();
+            echo "<br/>";
+
+
+         ?>
         <div class="container-fluid">
             <div class="row title_bar">
                 <div class="col-md-3">
@@ -50,7 +75,7 @@ session_start();
                 <div class="col-md-3" align="center">
                     <div align="right">
                     </br>
-                        <a class="btn btn-block btn-social btn-facebook" href="/html/dashboard.html">
+                        <a class="btn btn-block btn-social btn-facebook" href="fbconfig.php">
                         <i class="fa fa-facebook"></i> Login with Facebook
                         </a>
                     </div>

@@ -1,3 +1,9 @@
+<?php
+session_start(); 
+//require_once 'autoload.php';
+//use Facebook\FacebookRequest;
+?>
+
 <!doctype html>
 <html>
 
@@ -23,9 +29,9 @@
   
   <core-header-panel drawer>
 
-  <core-toolbar class="tall" id="side">
+  <core-toolbar class="tall" style="background:url(https://graph.facebook.com/<?php echo $_SESSION['FBID']; ?>/picture);">
   
-  <font id="name">+Roshan Thapaliya</font>
+  <font id="name">+<?php echo  $_SESSION['FULLNAME']; ?></font>
   </core-toolbar>
 
     <core-menu >

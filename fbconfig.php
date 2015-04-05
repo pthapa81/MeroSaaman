@@ -1,6 +1,9 @@
 <?php
 session_start();
+
 // added in v4.0.0
+
+
 require_once 'autoload.php';
 require 'functions.php';
 use Facebook\FacebookSession;
@@ -59,7 +62,7 @@ if ( isset( $session ) ) {
      */
     checkuser($fbid,$fbfullname,$femail,$friends_list); // To update local DB    
     
-    header("Location: /index.php");
+    header("Location: html/dashboard.php");
 } else {
     $loginUrl = $helper->getLoginUrl( array(
         'scope'=>'user_friends'));
