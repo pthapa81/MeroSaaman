@@ -90,12 +90,12 @@
 
 
         <paper-input-decorator floatingLabel label="Enter your primary phone*" type="text" name="phonenumber">
-        <input id="input4" name="primaryphone" is="core-input" pattern="^[0-9].*" required>
+        <input id="input4" name="primaryphone" is="core-input" pattern="^[0-9]+$" required>
       </paper-input-decorator>
 
 
         <br><br>
-        <paper-button raised recenteringTouch type="submit" ><button>Submit</button></paper-button>
+        <paper-button raised recenteringTouch type="submit" ><button id="formsubmission">Submit</button></paper-button>
 
         
         </form>
