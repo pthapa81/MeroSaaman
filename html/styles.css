@@ -14,7 +14,7 @@ body {
 
 [drawer]
 {
-  background-color: #C4BBBC;
+  background-color: #EDFAC5;
   border-right: 1px solid #ccc; 
 }
 
@@ -22,20 +22,18 @@ core-drawer-panel:not([narrow])#navicon
 {
   display:none;
 
+
 }
 
 core-toolbar
 {
-  background: #E01429;
+  background: #073763;
   color:white;
 }
 
 
 
-#padding: {
-  position:fixed;
-  left:300px;
-}
+
 
 #side
 {
@@ -66,7 +64,7 @@ core-toolbar
 {
   position:fixed;
   top:80%;
-  left:90%;
+  left:85%;
   height:50px;
   width:50px;
   color: #E01429;
@@ -79,4 +77,53 @@ position:fixed;
   left:90%
 }
 
+#content
+{
+  margin-left: 100px;
+  margin-top: 50px;
+  display: none;
 
+}
+
+#newform
+{
+  cursor:pointer;
+  cursor: hand;
+}
+paper-input {
+      width: 60%;
+    }
+
+    paper-slider::shadow #sliderBar::shadow #activeProgress {
+  background-color: #0f9d58;
+}
+
+paper-input-decorator {
+      width: 60%;
+    }
+
+    paper-slider::shadow #sliderBar::shadow #activeProgress {
+  background-color: #0f9d58;
+}
+
+
+paper-button {
+    padding:0;
+  }
+  paper-button::shadow .button-content {
+    padding:0;
+  }
+  paper-button button {
+    padding:1em;
+    background-color: transparent;
+    border-color: transparent;
+  }
+  paper-button button::-moz-focus-inner {
+    border: 0;
+  } 
+
+  
+  #content2
+  {
+    display:none;
+  }
