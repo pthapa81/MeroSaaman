@@ -44,7 +44,7 @@ core-toolbar
 {
 
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
 
 .content
@@ -60,13 +60,15 @@ core-toolbar
   left:600px;
 }
 
-#newform
+
+
+#submitbuttons
 {
   position:fixed;
   top:80%;
   left:85%;
   height:50px;
-  width:50px;
+  width:1 00px;
   color: #E01429;
 }
 
@@ -77,18 +79,17 @@ position:fixed;
   left:90%
 }
 
-#content
-{
-  margin-left: 100px;
-  margin-top: 50px;
-  display: none;
-
-}
 
 #newform
 {
   cursor:pointer;
   cursor: hand;
+ 
+}
+
+#newdelivery
+{
+  position:block;
 }
 paper-input {
       width: 60%;
@@ -123,7 +124,58 @@ paper-button {
   } 
 
   
+#content
+{
+  margin-left: 100px;
+  margin-top: 50px;
+  display: none;
+
+}
+
+
   #content2
   {
+    margin-left: 100px;
+    margin-top: 50px;
     display:none;
   }
+
+  #content3
+  {
+    margin-left: 100px;
+    margin-top: 50px;
+    display:none;
+  }
+
+  #content4
+  {
+    margin-left: 100px;
+    margin-top: 50px;
+    
+  }
+
+   #content5
+  {
+    margin-left: 100px;
+    margin-top: 50px;
+    display:none;
+  }
+
+  paper-slider::shadow #sliderBar::shadow #activeProgress {
+  background-color: #0f9d58;
+}
+
+
+  core-icon[icon="create"] {
+    color: red;
+    width: 32px;
+    height: 32px;
+    cursor:pointer;
+  cursor: hand;
+  }
+
+#editprofile
+{
+  position:fixed;
+  left:60%;
+}
