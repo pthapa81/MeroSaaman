@@ -2,6 +2,9 @@
 session_start(); 
 //require_once 'autoload.php';
 //use Facebook\FacebookRequest;
+function __autoload($class_name) {
+    include $class_name . '.php';
+}
 ?>
 
 <!doctype html>
@@ -80,23 +83,23 @@ session_start();
         Request Form
         <br>
       
-        <form is="ajax-form" action="test/x.php" method="post">
+        <form is="ajax-form" action="/php/updateUserInfo.php" method="post">
           
-      <paper-input-decorator floatingLabel label="Enter your first name*" type="text" name="firstname">
-      <input id="input1" name="firstname" is="core-input" required>
+      <paper-input-decorator floatingLabel label="Enter your first name*" type="text" name="firstName">
+      <input id="input1" name="firstName" is="core-input" required>
       </paper-input-decorator>
 
-      <paper-input-decorator floatingLabel label="Enter your last name*" type="text" name="lastname">
-      <input id="input2" name="secondname" is="core-input" required>
+      <paper-input-decorator floatingLabel label="Enter your last name*" type="text" name="lastName">
+      <input id="input2" name="lastName" is="core-input" required>
       </paper-input-decorator>
 
-        <paper-input-decorator floatingLabel label="Enter your address*" type="text" name="address">
-        <input id="input3" name="address" is="core-input" required>
+        <paper-input-decorator floatingLabel label="Enter your address*" type="text" name="homePhone">
+        <input id="input3" name="homePhone" is="core-input" required>
       </paper-input-decorator>
 
 
-        <paper-input-decorator floatingLabel label="Enter your primary phone*" type="text" name="phonenumber">
-        <input id="input4" name="primaryphone" is="core-input" pattern="^[0-9].*" required>
+        <paper-input-decorator floatingLabel label="Enter your primary phone*" type="text" name="cellPhone">
+        <input id="input4" name="cellPhone" is="core-input" pattern="^[0-9].*" required>
       </paper-input-decorator>
 
 

@@ -1,7 +1,7 @@
 <?php
 
 function __autoload($class_name) {
-    include $class_name . '.php';
+	include $class_name . '.php';
 }
 
 /**
@@ -52,16 +52,6 @@ class User{
 
 	public $address;
 
-/*
-	private $line1NumberBuilding;
-	private $line2NumberStreet;
-	private $line3AreaLocality;
-	private $city;
-	private $zipPostcode;
-	private $stateProvinceCounty;
-	private $country;
-*/
-
 	/**
    * Sets User Class attributes to $newValue
    *
@@ -92,37 +82,6 @@ class User{
 	public function sethomePhone($newvalue){
 		$this->homePhone = $newvalue;
 	}
-
-
-/*
-	public function setline1NumberBuilding($newvalue){
-		$this->line1NumberBuilding = $newvalue;
-	}
-
-	public function setline2NumberStreet($newvalue){
-		$this->line2NumberStreet= $newvalue;
-	}
-
-	public function setline3AreaLocality($newvalue){
-		$this->line3AreaLocality = $newvalue;
-	}
-
-	public function setcity($newvalue){
-		$this->city = $newvalue;
-	}
-
-	public function setzipPostCode($newvalue){
-		$this->zipPostcode = $newvalue;
-	}
-
-	public function setstateProvinceCounty($newvalue){
-		$this->stateProvinceCounty = $newvalue;
-	}
-
-	public function setcountry($newvalue){
-		$this->country = $newvalue;
-	}
-*/
 
 	/**
    * Sets User Class attributes to $newValue
@@ -155,35 +114,6 @@ class User{
 	}
 
 
-/*
-	public function getline1NumberBuilding(){
-		return $this->line1NumberBuilding;
-	}
-
-	public function getline2NumberStreet(){
-		return $this->line2NumberStreet;
-	}
-
-	public function getline3AreaLocality(){
-		return $this->line3AreaLocality;
-	}
-
-	public function getcity(){
-		return $this->city;
-	}
-
-	public function getzipPostCode(){
-		return $this->zipPostcode;
-	}
-
-	public function getstateProvinceCounty(){
-		return $this->stateProvinceCounty;
-	}
-
-	public function getcountry(){
-		return $this->country;
-	}
-*/
 }
 
 ?>

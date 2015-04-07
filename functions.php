@@ -1,5 +1,10 @@
 <?php
 require 'dbconfig.php';
+//require './php/User.php';
+//require './php/Address.php';
+
+session_start();
+
 function checkuser($fuid,$ffname,$femail,$friends_list){
     $check = mysql_query("select * from user where fuId='$fuid'");
     $check = mysql_num_rows($check);
@@ -15,4 +20,43 @@ function checkuser($fuid,$ffname,$femail,$friends_list){
     } else {
         // The user is already in the database.
     }
-}?>
+
+}
+
+/*
+function updateUserInfo($userObj){
+      
+        // Add entries for the new user in the database.
+        $fuId = $userObj->getfuId();
+        $firstName = $userObj->getfirstName();
+        $lastName = $userObj->getlastName();
+        $homePhone = $userObj->gethomePhone();
+        $cellPhone = $userObj->getcellPhone();
+
+
+ //       var_dump($userObj);
+
+        echo $fuId;
+        echo "<br/>";
+
+        echo $firstName;
+        echo "<br/>";
+
+        echo $lastName;
+        echo "<br/>";
+
+        echo $lastName;
+        echo "<br/>";
+
+        echo $homePhone;
+        echo "<br/>";
+
+        echo $cellPhone;
+        echo "<br/>";
+
+
+        $updateInfo = "UPDATE user SET firstName= '$firstName', lastName= '$lastName', homePhone= '$homePhone', cellPhone= '$cellPhone' WHERE fuId = '$fuId'";
+        mysql_query($updateInfo);
+  }
+*/
+?>

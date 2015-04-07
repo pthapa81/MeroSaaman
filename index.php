@@ -37,6 +37,8 @@ session_start();
     </ul></div></div>
 
 <?php else: ?>     <!-- Before login --> 
+        
+<!--
         <?php 
             require 'php/User.php';
             require 'php/Address.php';
@@ -63,6 +65,8 @@ session_start();
 
 
          ?>
+
+     -->
         <div class="container-fluid">
             <div class="row title_bar">
                 <div class="col-md-3">
