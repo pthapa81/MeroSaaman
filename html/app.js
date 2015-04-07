@@ -15,14 +15,7 @@ document.addEventListener('polymer-ready', function() {
 });
 
 
-$(document).ready(function(){
-        $("#addform").click(function () {
-            $("#content2").hide();
-            $("#content").fadeIn(1 );
 
-        });
-
-    });
 
 function validate() {
             var decorator = document.getElementById('paper1');
@@ -31,11 +24,68 @@ function validate() {
         }
 
 $(document).ready(function(){
+        $("#newform").click(function () {
+            $("#content2").hide();
+            $("#content3").hide();
+            $("#content4").hide();
+            $("#content5").hide();
+            $("#content").fadeIn(1 );
+
+        });
+
+    });
+
+$(document).ready(function(){
         $("#request").click(function () {
             $("#content").hide();
+            $("#content3").hide();
+            $("#content4").hide();
+            $("#content5").hide();
             $("#content2").fadeIn(1 );
 
         });
 
     });
 
+$(document).ready(function(){
+        $("#delivery").click(function () {
+            $("#content").hide();
+            $("#content2").hide();
+            $("#content4").hide();
+            $("#content5").hide();
+            $("#content3").fadeIn(1 );
+
+        });
+
+    });
+
+$(document).ready(function(){
+        $("#myprofile").click(function () {
+            $("#content").hide();
+            $("#content2").hide();
+            $("#content3").hide();
+            $("#content5").hide();
+            $("#content4").fadeIn(1 );
+
+        });
+
+    });
+
+$(document).ready(function(){
+        $("#newdelivery").click(function () {
+            $("#content").hide();
+            $("#content2").hide();
+            $("#content3").hide();
+            $("#content4").hide();
+            $("#content5").fadeIn(1 );
+
+        });
+
+    });
+
+
+
+window.addEventListener('polymer-ready', function(e) {
+      var xFoo = document.querySelector('core-drawer');
+      xFoo.barProperty = 'baz';
+    });
