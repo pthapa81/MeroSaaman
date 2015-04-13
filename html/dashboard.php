@@ -22,7 +22,7 @@ function __autoload($class_name) {
   </script>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script type="text/javascript" src="app.js"></script>
-  <link rel="import" href="elements.html" 
+  <link rel="import" href="elements.html"> 
 
 </head>
 
@@ -39,10 +39,12 @@ function __autoload($class_name) {
   </core-toolbar>
 
  <core-menu>
+      <paper-item id="myprofile" label="My Profile">My Profile</paper-item>
       <paper-item id="request" label="Requested Item">Requested Items</paper-item>
       <paper-item id="delivery" label="Delivery Info">Delivery Info</paper-item>
-      <paper-item id="myprofile" label="My Profile">My Profile
-    </core-menu>
+      <paper-item id="myprofile" label="Log Out"><a href="/logout.php">Log Out</a></paper-item>
+
+  </core-menu>
   </core-header-panel>
 
   <core-header-panel main>
@@ -87,17 +89,21 @@ function __autoload($class_name) {
       Item Request 
 
 
-<form is="ajax-form" action="test/x.php" method="post">
+<form is="ajax-form" action="../php/updateProductRequestInfo.php" method="post">
 
-      <paper-input-decorator floatingLabel label="Enter product link*" type="text" >
-      <input id="input1" name="productLink" is="core-input" required>
+      <paper-input-decorator floatingLabel label="Enter product link*" type="url" required >
+      <input id="input1" name="productLink" is="core-input" required pattern="https?://.+">
       </paper-input-decorator>
 
-      <paper-input-decorator floatingLabel label="Enter date*" type="text" >
-      <input id="input1" name="requestDate" is="core-input" required>
+      <paper-input-decorator floatingLabel label="Enter date (dd/mm/yyyy)*" type="text" >
+      <input id="input1" name="requestDate" is="core-input" required pattern="\d{1,2}/\d{1,2}/\d{4}">
       </paper-input-decorator>
-      <br>
+      <br></br></br>
+      <pre> 
 
+        These are your priority Level for each of the metrics.
+
+      </pre>
       Preferred Speed Score:    <input type="range" name="desiredSpeedScore" min="1" max="5" label="quality">[1-5]<br><br>
 
       Preferred Quality Score:<input type="range" name="desiredQualityScore" min="1" max="5" label="quality">[1-5]<br><br>
@@ -131,7 +137,7 @@ function __autoload($class_name) {
     </div>  
     My Profile
 
-    <form is="ajax-form" action="test/x.php" method="post">
+    <form is="ajax-form" action="../php/updateUserInfo.php" method="post">
           
       <paper-input-decorator floatingLabel label="Enter your first name*" type="text" >
       <input id="input1" name="firstName" is="core-input" required>
@@ -147,24 +153,16 @@ function __autoload($class_name) {
 
 
       <paper-input-decorator floatingLabel label="Enter your email address*" type="text">
-        <input id="input3" name="email" is="core-input" required>
+        <input id="input4" name="email" is="core-input" required>
       </paper-input-decorator>
-
-    
-      <paper-slider pin="true" immediateValue="true" min="0" max="5" name="slider" value="2.5">Trust Score</paper-slider>
-   
-
-
-
-
 
 
         <paper-input-decorator floatingLabel label="Enter your primary phone*" type="text" >
-        <input id="input4" name="cellPhone" is="core-input" pattern="^[0-9]+$" required>
+        <input id="input5" name="cellPhone" is="core-input" pattern="^[0-9]+$" required>
         </paper-input-decorator>
 
         <paper-input-decorator floatingLabel label="Enter your cellphone*" type="text">
-        <input id="input4" name="homePhone" is="core-input" pattern="^[0-9]+$" required>
+        <input id="input6" name="homePhone" is="core-input" pattern="^[0-9]+$" required>
         </paper-input-decorator>
 
 
@@ -175,18 +173,51 @@ function __autoload($class_name) {
         <paper-button raised recenteringTouch type="submit" ><button id="formsubmission">Submit</button></paper-button>
 
         
-        </form>
-
-
-        
-
+      
 
         </form>
 
   </div>
 
   <div id="content5">
-    Delivery Form
+   
+    Travel Information as a Carrier
+
+<form is="ajax-form" action="../php/updateCarrier.php" method="post">
+
+      <paper-input-decorator floatingLabel label="Enter Departure Date(dd/mm/yyyy)*" type="text">
+      <input id="input1" name="departureDate" is="core-input" required pattern="\d{1,2}/\d{1,2}/\d{4}">
+      </paper-input-decorator>
+
+      <paper-input-decorator floatingLabel label="Enter Arrival Date (dd/mm/yyyy)*" type="text" >
+      <input id="input2" name="arrivalDate" is="core-input" required pattern="\d{1,2}/\d{1,2}/\d{4}">
+      </paper-input-decorator>
+
+      <paper-input-decorator floatingLabel label="Enter Arrival City *" type="text" >
+      <input id="input3" name="arrivalCity" is="core-input" required >
+      </paper-input-decorator>
+
+      <paper-input-decorator floatingLabel label="Enter Departure City *" type="text" >
+      <input id="input4" name="departureCity" is="core-input" required >
+      </paper-input-decorator>
+
+      <paper-input-decorator floatingLabel label="Flight No *" type="text" >
+      <input id="input5" name="flightNo" is="core-input" > <!---required pattern = "/^([a-z][a-z]|[a-z][0-9]|[0-9][a-z])[a-z]?[0-9]{1,4}[a-z]?$/i" -->
+      </paper-input-decorator>
+
+      <paper-input-decorator floatingLabel label="Stay Duration *" type="text" >
+      <input id="input6" name="stayDuration" is="core-input" required pattern = "^[0-9]+$">
+      </paper-input-decorator>
+
+
+      <br>
+
+
+
+        <paper-button raised recenteringTouch type="submit" ><button id="formsubmission">Submit</button></paper-button>
+
+</form>
+     
   </div>
 
 

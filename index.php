@@ -80,7 +80,7 @@ session_start();
                     <div align="right">
                     </br>
                         <a class="btn btn-block btn-social btn-facebook" href="fbconfig.php">
-                        <i class="fa fa-facebook"></i> Login with Facebook
+                        <i class="fa fa-facebook"></i> Login or Signup
                         </a>
                     </div>
                 </div>

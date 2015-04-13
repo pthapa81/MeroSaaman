@@ -49,6 +49,7 @@ class User{
 	private $ratingScore;
 	private $cellPhone;
 	private $homePhone;
+	private $Femail;
 
 	public $address;
 
@@ -83,6 +84,10 @@ class User{
 		$this->homePhone = $newvalue;
 	}
 
+	public function setFemail($newvalue){
+		$this->Femail = $newvalue;
+	}
+
 	/**
    * Sets User Class attributes to $newValue
    *
@@ -111,6 +116,10 @@ class User{
 
 	public function gethomePhone(){
 		return $this->homePhone;
+	}
+
+	public function getFemail(){
+		return $this->Femail;
 	}
 
 

@@ -132,6 +132,14 @@ paper-button {
 
 }
 
+  
+#carrier-content
+{
+  margin-left: 100px;
+  margin-top: 50px;
+  display: none;
+
+}
 
   #content2
   {
