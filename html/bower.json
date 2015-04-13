@@ -15,7 +15,7 @@
   "dependencies": {
     "polymer": "~0.5.5",
     "paper-input": "Polymer/paper-input#~0.5.5",
-    "paper-button": "Polymer/paper-button#~0.5.5",
+    "paper-button": "Polymer/paper-button#^0.5",
     "core-toolbar": "Polymer/core-toolbar#~0.5.5",
     "paper-tabs": "Polymer/paper-tabs#~0.5.5",
     "core-drawer-panel": "Polymer/core-drawer-panel#~0.5.5",
@@ -25,8 +25,13 @@
     "core-icons": "Polymer/core-icons#~0.5.5",
     "core-scaffold": "Polymer/core-scaffold#~0.5.5",
     "core-dropdown": "Polymer/core-dropdown#~0.5.5",
-    "paper-item": "Polymer/paper-item#~0.5.5",
-    "paper-dropdown": "Polymer/paper-dropdown#~0.5.5",
-    "core-elements": "Polymer/core-elements#~0.5.5"
+    "paper-item": "Polymer/paper-item#^0.5",
+    "paper-dropdown": "Polymer/paper-dropdown#^0.5",
+    "core-elements": "Polymer/core-elements#~0.5.5",
+    "paper-shadow": "Polymer/paper-shadow#^0.5",
+    "paper-slider": "Polymer/paper-slider#^0.5",
+    "ajax-form": "~1.6.0",
+    "paper-dropdown-menu": "Polymer/paper-dropdown-menu#^0.5",
+    "core-icon": "Polymer/core-icon#^0.5"
   }
 }

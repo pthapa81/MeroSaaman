@@ -37,7 +37,36 @@ session_start();
     </ul></div></div>
 
 <?php else: ?>     <!-- Before login --> 
+        
+<!--
+        <?php 
+            require 'php/User.php';
+            require 'php/Address.php';
 
+
+            $buyer = new User;
+            $buyer->setfirstName("Prashant");
+
+            $carrier = new User;
+            $carrier->setfirstName("Nischal");
+
+            $carrier->address = new Address;
+
+            $carrier->address->line1NumberBuilding = "111 Rhode Island Ave";
+            $carrier->address->city = "Washington";
+
+
+            echo $buyer->getfirstName();
+            echo "<br/>";
+            echo $carrier->getfirstName();
+            echo "<br/>";
+            $carrier->address->printValues();
+            echo "<br/>";
+
+
+         ?>
+
+     -->
         <div class="container-fluid">
             <div class="row title_bar">
                 <div class="col-md-3">

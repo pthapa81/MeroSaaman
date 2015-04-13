@@ -1,6 +1,9 @@
 <?php
 session_start();
+
 // added in v4.0.0
+
+
 require_once 'autoload.php';
 require 'functions.php';
 use Facebook\FacebookSession;
@@ -17,7 +20,7 @@ use Facebook\HttpClients\FacebookHttpable;
 // init app with app id and secret
 FacebookSession::setDefaultApplication( '703254633116441','0e803d999808c2ed4991d42a021b5bc7' );
 // login helper with redirect_uri
-$helper = new FacebookRedirectLoginHelper('http://localhost:8888/fbconfig.php' );
+$helper = new FacebookRedirectLoginHelper('http://localhost/fbconfig.php' );
 try {
     $session = $helper->getSessionFromRedirect();
 } catch( FacebookRequestException $ex ) {
@@ -59,7 +62,7 @@ if ( isset( $session ) ) {
      */
     checkuser($fbid,$fbfullname,$femail,$friends_list); // To update local DB    
     
-    header("Location: /index.php");
+    header("Location: html/dashboard.php");
 } else {
     $loginUrl = $helper->getLoginUrl( array(
         'scope'=>'user_friends'));
