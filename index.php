@@ -12,6 +12,8 @@ session_start();
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="bootstrap-social-gh-pages/bootstrap-social.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   
 </head>
@@ -67,10 +69,11 @@ session_start();
          ?>
 
      -->
+     <!--
         <div class="container-fluid">
             <div class="row title_bar">
                 <div class="col-md-3">
-                    <h1 style="font-family: arial,sans-serif; text-align:right">Mero Saman</h1>
+                    <h1 style="font-size: 3em; text-align:left; color: rgb(222, 223, 143); font-family: 'Indie Flower', cursive; ">Mero Saman</h1>
                 </div>
                 <div class="col-md-6">
                     <div align="center">
@@ -85,17 +88,70 @@ session_start();
                     </div>
                 </div>
             </div>
-            
+            -->
+
+            <nav class="navbar navbar-default navbar-fixed-top navbar-static-top navbar-inverse title_bar">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#" style="font-size: 2em; text-align:left; color: rgb(222, 223, 143); font-family: 'Indie Flower', cursive; ">Mero Saman</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><span class="sr-only">(current)</span></a></li>
+                      </ul>
+                      <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                      </form>
+
+
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="html/RecShopsTest.html">Recommended Shops</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li>
+                           <div class="col-md-12" align="center" style="position:relative; bottom:0.75em">
+                                <div align="right">
+                                </br>
+                                    <a class="btn btn-block btn-social btn-facebook" href="fbconfig.php">
+                                    <i class="fa fa-facebook"></i> Login or Signup
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+              </div>
+            </nav>
+
+        <div class="container-fluid">    
            <div class="row" style="position:relative;">
-                <div align="center" style="position:absolute; z-index:1; top:8em;">
-                        <div style="padding:4em;width:7em; height:5em;">
-                            <p class="ino" style="font-size:9em; color: rgb(255,255,255)">
+                <div align="right" class="col-md-12" style="position:absolute; z-index:1; top:3.5em;">
+                        <div align="right" style="padding:2.5em;width:80%; height:2em;">
+                            <p class="ino" style="font-size:4em; color: rgb(255, 255, 255); font-family: 'Audiowide', cursive;">
                                 Innovating International Shipping
                             </p>
                         </div>
+                        <div align="center" style="position:absolute; top:20.5em; left:15em">
+                            <form>
+                                <input type="text" name="order" placeholder="I want...." size="100" style="height:3em;">
+                                <button type="submit" name="submit" style="height:2em;"><img src="/var/www/MeroSaaman/images"></button>
+                            </form>
+                        </div>
                 </div>
                 <div align="center">
-                    <img src="images/logistics-travel-consulting.jpg" width=100% height=80%>
+                    <img src="images/logistics-travel-consulting.jpg" width=99.99% height=80%>
                 </div>
             </div>
             
