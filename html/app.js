@@ -89,3 +89,6 @@ window.addEventListener('polymer-ready', function(e) {
       var xFoo = document.querySelector('core-drawer');
       xFoo.barProperty = 'baz';
     });
+
+
+
